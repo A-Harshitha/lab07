@@ -50,12 +50,12 @@ def sign_up():
         password = request.form['password']
         confirm_password = request.form['confirm_password']
 
-        # Check if passwords match
+        # Check if the passwords matches
         if password != confirm_password:
             flash("Passwords do not match!")
             return render_template('sign_up.html', first_name=first_name, last_name=last_name, email=email, username=username)
 
-        # Check password strength
+        # Check the password strength
         errors = password_check(password)
         if errors:
             for error in errors:
@@ -74,7 +74,7 @@ def sign_up():
             flash("Email already registered. Please use a different email.")
             return render_template('sign_up.html', first_name=first_name, last_name=last_name, email=email, username=username)
 
-        # If everything is fine, create a new user
+        # If everything is good, create a new user
         new_user = User(first_name, last_name, email, username, password)
         db.session.add(new_user)
         db.session.commit()

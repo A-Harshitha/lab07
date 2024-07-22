@@ -1,6 +1,6 @@
 # Lab07 Flask Application
 
-Implemented a signup
+Implemented a signup and signin functionalities
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Unzip the `lab07` folder to your desired location. For example, you might unzip 
 
 Open a terminal or command prompt and navigate to the `lab07` directory:
 ```bash
-cd path\to\lab06
+cd path\to\lab07
 ```
 
 ### 3. Create a Virtual Environment
@@ -50,7 +50,8 @@ pip install Flask
 
 Install SQLAlchemy using pip:
 ```bash
-pip install SQLAlchemy
+pip install flask_sqlalchemy
+
 ```
 
 ### 6. Run the Flask Application
@@ -72,5 +73,5 @@ Open a web browser and navigate to:
 http://127.0.0.1:5000/
 ```
 
-You should see the sign-up form on the landing
+You should see the sign-up form on the home page.
 
