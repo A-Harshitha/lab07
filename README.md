@@ -72,5 +72,5 @@ Open a web browser and navigate to:
 http://127.0.0.1:5000/
 ```
 
-You should see the sign-up form on the home page.
+You should see the sign-up form on the landing
 
